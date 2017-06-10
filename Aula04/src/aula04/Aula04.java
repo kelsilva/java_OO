@@ -16,8 +16,8 @@ public class Aula04 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Caneta c1 = new Caneta();
-        c1.modelo= "BIC";
+        Caneta c1 = new Caneta("NIC","Amarelo", 0.4f);
+      
         c1.status();
     }
     
