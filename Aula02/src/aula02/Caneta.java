@@ -10,36 +10,36 @@ package aula02;
  * @author KELSILVA-WINDOWS7
  */
 public class Caneta {
-    
+
     String modelo;
     String cor;
     float ponta;
     int carga;
     boolean tampada;
-    void status(){
-         System.out.println("uma caneta modelo " + this.modelo);
-         System.out.println("ponta " + this.ponta);
-         System.out.println("carga " + this.carga);
-         System.out.println("cor " + this.cor);
-         System.out.println("esta tampada " + this.tampada);
-    } 
-    
-    void rabiscar(){
-    if (tampada == true){
-        System.out.println("ERRO! Nao posso rabiscar");
-    }else{
-      System.out.println("estou rabiscando");
-    
+
+    void status() {
+        System.out.println("caneta modelo; " + this.modelo);
+        System.out.println("caneta cor; " + this.cor);
+        System.out.println("caneta ponta; " + this.ponta);
+        System.out.println("caneta carga; " + this.carga);
+        System.out.println("caneta tampada; " + this.tampada);
+
     }
-    
+
+    void rabiscar() {
+        if (this.tampada == true) {
+            System.out.println("ERRO a caneta esta tampada nao se pode rabiscar");
+        } else {
+            System.out.println("Pode Rabiscar"); 
+        }
+        
     }
     void tampar(){
-    this.tampada = true;
+        this.tampada = true;
+        
     }
-    
-    void destampar(){
-       this.tampada= false;
-    
+    void destampada(){
+        this.tampada = false;
     }
-    
+
 }
